@@ -39,7 +39,6 @@ contract PomodoroToken {
 
         userTokens[msg.sender] = 0;
 
-        // Transfer tokens to the user (in a real-world scenario, consider using ERC-20 standards)
 
         emit StudySessionCompleted(msg.sender, tokensToWithdraw);
     }
