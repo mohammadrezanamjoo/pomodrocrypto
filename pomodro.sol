@@ -21,7 +21,7 @@ contract PomodoroToken {
     }
 
     function startStudySession() external {
-        require(lastSessionEndTime[msg.sender] + pomodoroDuration <= block.timestamp, "Session in progress");
+        require(lastSessionEndTime[msg.sender] + pomodoroDuration <= block.timestamp, "Session in Progress");
 
         uint256 tokensEarned = (block.timestamp - lastSessionEndTime[msg.sender]) / pomodoroDuration * tokenRewardPerSession;
         userTokens[msg.sender]+=  tokensEarned;
