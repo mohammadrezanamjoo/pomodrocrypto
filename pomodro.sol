@@ -12,7 +12,7 @@ contract PomodoroToken {
     event StudySessionCompleted(address indexed user, uint256 tokensEarned);
 
     modifier onlyOwner() {
-        require(msg.sender == owner, "Not the Owner");
+        require(msg.sender == owner, "Not The Owner");
         _;
     }
 
