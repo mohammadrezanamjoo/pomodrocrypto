@@ -18,7 +18,7 @@ contract Voting {
     // Array to store candidate IDs
     uint[] public candidateIds;
 
-    // Event triggered when a new vote is cast
+
     event Voted(address indexed voter, uint candidateId);
 
     // Event triggered when a new candidate is added
