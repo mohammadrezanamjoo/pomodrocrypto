@@ -9,7 +9,7 @@ contract Voting {
         uint votes;
     }
 
-    // Mapping to store candidates
+
     mapping(uint => Candidate) public candidates;
 
     // Mapping to store the address of voters and their selected candidate ID
