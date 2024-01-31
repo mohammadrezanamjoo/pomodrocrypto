@@ -46,7 +46,7 @@ contract Voting {
         emit CandidateAdded(candidateId, name);
     }
 
-    // Function to cast a vote
+
     function vote(uint candidateId) public {
         require(candidateId > 0 && candidateId <= candidateIds.length, "Invalid candidate ID");
         require(voters[msg.sender] == 0, "You have already voted");
