@@ -34,7 +34,7 @@ contract PomodoroToken {
         return userTokens[ msg.sender ];
     }
 
-    function withdrawTokens() external {
+    function withdrawTokens()  {
         uint256 tokensToWithdraw = userTokens[msg.sender];
         require(tokensToWithdraw > 0, "No tokens to Withdraw");
 
