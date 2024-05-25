@@ -44,7 +44,7 @@ contract PomodoroToken {
         emit StudySessionCompleted(msg.sender , tokensToWithdraw);
     }
 
-    function changeOwner(address newOwner) external onlyOwner {
+    function changeOwner(address newOwner)  onlyOwner {
         owner = newOwner;
     }
 }
