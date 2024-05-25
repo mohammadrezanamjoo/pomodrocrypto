@@ -30,7 +30,7 @@ contract PomodoroToken {
         emit StudySessionCompleted(msg.sender, tokensEarned);
     }
 
-    function getUserTokens() external view returns (uint256) {
+    function getUserTokens()  view returns (uint256) {
         return userTokens[ msg.sender ];
     }
 
