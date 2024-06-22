@@ -7,7 +7,7 @@ contract PomodoroToken {
     mapping(address => uint256) public lastSessionEndTime;
 
     uint256 public constant pomodoroDuration = 35 minutes;
-    uint256 public constant tokenRewardPerSession = 1;
+    uint256 public constant tokenRewardPerSession = 2;
 
     event StudySessionCompleted(address indexed user, uint256 tokensEarned);
 
