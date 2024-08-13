@@ -36,7 +36,6 @@ contract Voting {
         owner = msg.sender;
     }
 
-    // Function to add a new candidate
     function addCandidate(string memory name) public onlyOwner {
         uint candidateId = candidateIds.length + 1;
         candidates[candidateId] = Candidate(candidateId, name, 0);
