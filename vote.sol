@@ -55,7 +55,6 @@ contract Voting {
         emit Voted(msg.sender, candidateId);
     }
 
-    // Function to get the total votes for a candidate
     function getVotes(uint candidateId) public view returns (uint) {
         require(candidateId > 0 && candidateId <= candidateIds.length, "Invalid candidate ID");
         return candidates[candidateId].votes;
